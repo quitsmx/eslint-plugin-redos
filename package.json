@@ -1,6 +1,6 @@
 {
   "name": "@quitsmx/eslint-plugin-redos",
-  "version": "4.5.0-rc2",
+  "version": "4.5.0-rc3",
   "description": "eslint-plugin-redos wrapper for eslint flat configs",
   "keywords": [
     "eslint",
@@ -11,12 +11,12 @@
     "regexp",
     "security"
   ],
+  "homepage": "https://makenowjust-labs.github.io/recheck/",
   "bugs": "https://github.com/quitsmx/eslint-plugin-redos/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/quitsmx/eslint-plugin-redos"
   },
-  "homepage": "https://makenowjust-labs.github.io/recheck/",
   "license": "MIT",
   "author": {
     "name": "TSUYUSATO Kitsune",
