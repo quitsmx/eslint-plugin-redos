@@ -1,0 +1,71 @@
+{
+  "name": "@quitsmx/eslint-plugin-redos",
+  "version": "4.5.0-rc1",
+  "description": "eslint-plugin-redos wrapper for eslint flat configs",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "redos",
+    "recheck",
+    "regexp",
+    "security"
+  ],
+  "bugs": "https://github.com/quitsmx/eslint-plugin-redos/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quitsmx/eslint-plugin-redos"
+  },
+  "homepage": "https://makenowjust-labs.github.io/recheck/",
+  "license": "MIT",
+  "author": {
+    "name": "TSUYUSATO Kitsune",
+    "email": "make.just.on@gmail.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.cts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "zshy && cp src/*.d.ts dist/ && sort-package-json && pnpm test",
+    "prepack": "pnpm run build",
+    "test": "node --test"
+  },
+  "prettier": "@quitsmx/prettier-config",
+  "dependencies": {
+    "eslint-plugin-redos": "4.5.0"
+  },
+  "devDependencies": {
+    "@quitsmx/prettier-config": "^3.1.0",
+    "@tsconfig/strictest": "latest",
+    "@types/node": "latest",
+    "prettier": "^3.6.2",
+    "sort-package-json": "^3.4.0",
+    "typescript": "^5.9.0",
+    "zshy": "^0.4.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "node": "^20.9.0 || >=21.1.0"
+  },
+  "zshy": {
+    "exports": {
+      ".": "src/index.ts",
+      "./package.json": "./package.json"
+    }
+  }
+}

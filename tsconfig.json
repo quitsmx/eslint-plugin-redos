@@ -1,0 +1,24 @@
+{
+  "extends": ["@tsconfig/strictest/tsconfig.json"],
+
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "erasableSyntaxOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2023"],
+    "libReplacement": false,
+    "typeRoots": ["node_modules/@types", "src"],
+    "types": ["node", "eslint-plugin-redos"],
+    "module": "nodenext",
+    "noEmit": true,
+    "noUncheckedSideEffectImports": true,
+    "rewriteRelativeImportExtensions": true,
+    "target": "es2023",
+    "verbatimModuleSyntax": true,
+  },
+
+  "include": ["src/index.ts"],
+  "exclude": ["dist"],
+}
