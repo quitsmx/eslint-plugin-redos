@@ -51,11 +51,11 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         run: pnpm install --frozen-lockfile
 
-      - name: Publish to NPM
-        if: steps.check.outputs.changed == 'true'
-        run: pnpm publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Publish to NPM
+      #   if: steps.check.outputs.changed == 'true'
+      #   run: pnpm publish --access public --no-git-checks
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish GitHub Release
         if: steps.check.outputs.changed == 'true'
